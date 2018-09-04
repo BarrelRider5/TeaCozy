@@ -12,10 +12,13 @@ header {
   border-bottom: 1px solid seashell;
   display: flex;
   height: 69px;
+  width: 100%;
   justify-content: space-between;
   padding: 0 10px;
   position: fixed;
-  width: 100%;
+  Top: 0;
+  Left: 0;
+  z-index: 1;
 }
 
 .headerlogo {
@@ -26,4 +29,48 @@ header {
   color: seashell;
   padding: 15px;
   text-decoration: underline;
+}
+
+body {
+  margin: 70px auto 0px;
+  overflow: scroll;
+}
+
+.mission, .featured, .locations {
+  margin: 70px auto 0px;
+}
+
+.mission {
+  background: url("../../resources/images/img-mission-background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 700px;
+  width: 1200px;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+}
+
+.featured_pics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.piclabels {
+  display: flex;
+  flex-direction: column;
+  padding: 10px
+}
+
+img {
+  padding: 10px 5px;
+  height: 200px;
+  width: 300px;
 }
