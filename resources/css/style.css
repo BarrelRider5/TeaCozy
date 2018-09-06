@@ -1,3 +1,7 @@
+
+
+/*The redline does not specify font-sizes, only headings. Should I estimate font-sizes? Or just leave headings?*/
+
 * {
   background-color: black;
   color: seashell;
@@ -32,7 +36,6 @@ header {
 }
 
 body {
-  margin: 70px auto 0px;
   overflow: scroll;
 }
 
@@ -46,9 +49,25 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 70px auto;
   width: 1200px;
   height: 700px;
+}
+
+.mission h2 {
+  margin: 10px auto 20px;
+}
+
+.mission h4 {
+  margin: 20px auto 10px;
+}
+
+.textbox1 {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%
 }
 
 .featured {
@@ -76,12 +95,19 @@ img {
 }
 
 .locations {
-  background: url("../../resources/images/img-locations-background.jpg");
+  background: url("../../resources/images/img-locations-background.jpg") top center no-repeat;
+  background-size: 90%;
   width: 1200px;
   height: 500px;
 }
 
+.locations h2{
+  background-color: inherit;
+  margin: 0 auto;
+}
+
 .location_boxes {
+  background-color: inherit;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -93,11 +119,19 @@ img {
   flex-direction: column;
   justify-content: space-around;
   margin: 15px 20px;
+  opacity: 1;
   width: 300px;
   height: 300px;
 }
 
+/*Not sure if I should be including these font-sizes. They are approximates. Redline only asks for headers and does not specify font-size.*/
+h2 {
+  font-size: 30px;
+}
+
 h3 {
+  color: seashell;
+  font-size: 24px;
   margin: 0;
 }
 
@@ -106,10 +140,12 @@ h3 {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  margin: 20px auto 40px;
   height: 200px;
   }
 
 .copyright h5{
-  padding: 20px;
+  margin: 0px;
+  padding: 40px 20px;
   text-align: left;
   }
